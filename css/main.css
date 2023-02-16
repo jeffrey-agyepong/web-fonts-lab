@@ -1,0 +1,100 @@
+/* Fonts */
+/* font-family: 'Alegreya', serif;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+  line-height: 1.5;
+  background: rgb(163, 151, 226);
+}
+
+header,
+main,
+section,
+footer {
+  width: 1200px;
+  margin: 24px auto;
+}
+
+h1 {
+  font-size: 56px;
+  font-family: 'Courier New', Courier, monospace;
+  background: cadetblue;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px white;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.center {
+  text-align: center;
+}
+
+main {
+  padding: 3rem;
+}
+
+section {
+  background-color: #9ea4ab;
+  padding: 1em 1em;
+  box-shadow: -1px 5px 18px 2px rgb(0 0 0 / 23%);
+  max-width: 400px;
+  min-width: 250px;
+}
+
+/* ---Flexbox --- */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-container>.column {
+  /* flex-basis: 1; */
+  width: calc(90%/4);
+}
+
+/* Fonts */
+
+body>main>section:nth-child(1)>h2 {
+  font-family: 'Alegreya', serif;
+}
+
+body>main>section:nth-child(1)>p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body>main>section:nth-child(2)>h2 {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+body>main>section:nth-child(2)>p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+body>main>section:nth-child(3)>h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+body>main>section:nth-child(3)>p {
+  font-family: 'Lato', sans-serif;
+}
+
+body>main>section:nth-child(4)>h2 {
+  font-family: 'Philosopher', sans-serif;
+}
+
+body>main>section:nth-child(4)>p {
+  font-family: 'Mulish', sans-serif;
+}

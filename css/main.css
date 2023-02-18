@@ -21,7 +21,7 @@ footer {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-family: 'Courier New', Courier, monospace;
   background: cadetblue;
   width: 50%;
@@ -32,16 +32,16 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-variant: small-caps;
   background: #e9d0e3;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 100%;
   text-align: center;
 }
 
 p {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .center {
@@ -58,14 +58,14 @@ main {
   background-color: #9ea4ab;
   padding: 1em 1em;
   box-shadow: 0px 0px 10px 0px rgb(17, 16, 16);
-  border-radius: 13px;
-  margin-bottom: 20px;
+  border-radius: 0.8125rem;
+  margin-bottom: 1.25rem;
 }
 
 /* ---Flexbox --- */
 .grid-container {
   display: grid;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
 }
 
@@ -119,12 +119,12 @@ body>main>section:nth-child(4)>p {
   }
 
   .grid-container {
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(auto-fill, 25rem);
   }
 
   .column {
-    max-width: 350px;
-    min-width: 250px;
+    max-width: 21.875rem;
+    min-width: 15.625rem;
   }
 
   h1 {

@@ -17,23 +17,31 @@ header,
 main,
 section,
 footer {
-  width: 1200px;
-  margin: 24px auto;
+  margin: 0 auto;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 60px;
   font-family: 'Courier New', Courier, monospace;
   background: cadetblue;
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  box-shadow: 0px 0px 10px 0px white;
-  font-variant: small-caps;
+  box-shadow: 0px 0px 10px 0px rgb(17, 16, 16);
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 50px;
+  font-variant: small-caps;
+  background: #e9d0e3;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
 }
 
 .center {
@@ -44,26 +52,28 @@ main {
   padding: 3rem;
 }
 
-section {
+
+
+.column {
   background-color: #9ea4ab;
   padding: 1em 1em;
-  box-shadow: -1px 5px 18px 2px rgb(0 0 0 / 23%);
-  max-width: 400px;
-  min-width: 250px;
+  box-shadow: 0px 0px 10px 0px rgb(17, 16, 16);
+  border-radius: 13px;
+  margin-bottom: 20px;
 }
 
 /* ---Flexbox --- */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.grid-container {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
 }
 
-.flex-container>.column {
-  /* flex-basis: 1; */
-  width: calc(90%/4);
+.mg {
+  margin: 2rem auto;
 }
 
+*/
 /* Fonts */
 
 body>main>section:nth-child(1)>h2 {
@@ -84,7 +94,7 @@ body>main>section:nth-child(2)>p {
 
 
 body>main>section:nth-child(3)>h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Phudu', cursive;
 }
 
 body>main>section:nth-child(3)>p {
@@ -97,4 +107,35 @@ body>main>section:nth-child(4)>h2 {
 
 body>main>section:nth-child(4)>p {
   font-family: 'Mulish', sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+
+  header,
+  main,
+  section,
+  footer {
+    width: 60rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, 400px);
+  }
+
+  .column {
+    max-width: 350px;
+    min-width: 250px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

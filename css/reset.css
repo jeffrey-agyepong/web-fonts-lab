@@ -2,6 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 html,
 body,
